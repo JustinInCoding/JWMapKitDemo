@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4802C3406C37524BC79146EA /* Pods_JWMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B2C5C027F2CB8D831F9FB0 /* Pods_JWMapKit.framework */; };
 		D051281F2464561A0087CF56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051281E2464561A0087CF56 /* AppDelegate.swift */; };
 		D05128212464561A0087CF56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05128202464561A0087CF56 /* SceneDelegate.swift */; };
 		D05128232464561A0087CF56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05128222464561A0087CF56 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A42AB8B02AE32D47BE35D865 /* Pods-JWMapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWMapKit.debug.xcconfig"; path = "Target Support Files/Pods-JWMapKit/Pods-JWMapKit.debug.xcconfig"; sourceTree = "<group>"; };
 		D051281B2464561A0087CF56 /* JWMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D051281E2464561A0087CF56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D05128202464561A0087CF56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		D05128272464561B0087CF56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D051282A2464561B0087CF56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D051282C2464561B0087CF56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B2C5C027F2CB8D831F9FB0 /* Pods_JWMapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWMapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC2816F139F4509241891DD /* Pods-JWMapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWMapKit.release.xcconfig"; path = "Target Support Files/Pods-JWMapKit/Pods-JWMapKit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4802C3406C37524BC79146EA /* Pods_JWMapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78D6B85161FBDEAEBAF63976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1B2C5C027F2CB8D831F9FB0 /* Pods_JWMapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A61C278BDA965F63FB693B03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A42AB8B02AE32D47BE35D865 /* Pods-JWMapKit.debug.xcconfig */,
+				FEC2816F139F4509241891DD /* Pods-JWMapKit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D05128122464561A0087CF56 = {
 			isa = PBXGroup;
 			children = (
 				D051281D2464561A0087CF56 /* JWMapKit */,
 				D051281C2464561A0087CF56 /* Products */,
+				A61C278BDA965F63FB693B03 /* Pods */,
+				78D6B85161FBDEAEBAF63976 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D051282F2464561B0087CF56 /* Build configuration list for PBXNativeTarget "JWMapKit" */;
 			buildPhases = (
+				9A360E6FE9BB38EA411E1E6A /* [CP] Check Pods Manifest.lock */,
 				D05128172464561A0087CF56 /* Sources */,
 				D05128182464561A0087CF56 /* Frameworks */,
 				D05128192464561A0087CF56 /* Resources */,
+				3FCE5BBC01DC6195CDCBAD0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FCE5BBC01DC6195CDCBAD0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JWMapKit/Pods-JWMapKit-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JWMapKit/Pods-JWMapKit-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JWMapKit/Pods-JWMapKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A360E6FE9BB38EA411E1E6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JWMapKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D05128172464561A0087CF56 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		D05128302464561B0087CF56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A42AB8B02AE32D47BE35D865 /* Pods-JWMapKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		D05128312464561B0087CF56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC2816F139F4509241891DD /* Pods-JWMapKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
